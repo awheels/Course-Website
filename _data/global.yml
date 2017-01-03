@@ -1,10 +1,10 @@
 # Site Settings
-title: 'Scotch Jekyll Bootstrap'
-description: 'An Open-Source Bootstrap 3 Jekyll Theme by Scotch'
-url: 'http://scotch-io.github.io' # the base hostname & protocol for your site
-footer_text: 'This text is footer text. Footer text goes here.'
+title: 'Andrew Wheeler - Class Website'
+description: 'A collection of resources and lessons taught within my math courses'
+url: '' # the base hostname & protocol for your site
+footer_text: ''
 
 # Admin Settings
-admin_name: 'Nicholas Cerminara'
-admin_email: 'nick@scotch.io'
+admin_name: 'Andrew Wheeler'
+admin_email: 'wheeler02@gmail.com'
 

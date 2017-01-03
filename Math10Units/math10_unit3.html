@@ -1,0 +1,302 @@
+---
+layout: default
+permalink: /math10/unit3/
+course_title: Math 10
+course_desc: 
+all_units:
+  - title: Unit 1
+    permalink: unit1/
+    disabled: true
+  - title: Unit 2
+    permalink: unit2/
+    disabled: true
+  - title: Unit 3
+    permalink: unit3/
+    disabled: false
+  - title: Unit 4
+    permalink: unit4/
+    disabled: true
+  - title: Unit 5
+    permalink: unit5/
+    disabled: true
+lessons:
+  - title: Discovering (or Rediscovering) Trig Ratios
+    short_title: Disc Trig Ratios
+    ln_title: Discovering (or Rediscovering) Trig Ratios
+    ln_desc: 
+    ln_link: https://www.scribd.com/embeds/335560116/content?start_page=1&view_mode=scroll&access_key=key-Z9TqQolB2W7VrDFXmQHk&show_recommendations=false
+    ln_citation: 2
+    ln_citation_name: Sam J Shah
+    ln_citation_link: http://www.samjshah.com
+    problem_set_title: Discovering (or Rediscovering) Trig Ratios
+    problem_set_desc: I know it will be tempting to use your calculator here. But please do not!
+    problem_set_link: https://www.scribd.com/embeds/335570604/content?start_page=1&view_mode=scroll&access_key=key-9CB1emj95FTE8KOeJCtL&show_recommendations=false
+  - title: Naming Trig Ratios
+    short_title: Naming Trig Ratios
+    ln_title: Naming Trig Ratios
+    ln_desc: 
+    ln_link: https://www.scribd.com/embeds/335560115/content?start_page=1&view_mode=scroll&access_key=key-R6FWtbiInBEQBVbrX121&show_recommendations=false
+    ln_citation: 2
+    ln_citation_name: Sam J Shah
+    ln_citation_link: http://www.samjshah.com
+    problem_set_title: Naming Trig Ratios
+    problem_set_desc: Complete a selection of the following problems from Haese & Harris MYP Math 5 (Standard). These will help you to solidify your usage of Trig Ratios. But remember that it is much more important that you understand how trig ratios work and their underlying concepts. The questions for practice here are relatively low level. If your understanding of the concepts is weak you will struggle when you see questions that are slightly unfamiliar.
+    problem_set: 
+        - problems: Page 247 13A.1 - Complete 3-5 problems of varying difficulty
+        - problems: Page 249 13A.2 - Complete 3-5 problems of varying difficulty
+        - problems: Page 251 13A.3 - Complete 3-5 problems of varying difficulty
+    problem_set_link: 
+  - title: Special Triangles
+    short_title: Spec Triangles
+    ln_title: Special Triangles
+    ln_desc:
+    ln_link: https://www.scribd.com/embeds/335560118/content?start_page=1&view_mode=scroll&access_key=key-TBz02TjC9Q0tiqeQwDkz&show_recommendations=false
+    ln_citation: 1
+    ln_citation_name: Sam J Shah
+    ln_citation_link: www.samjshah.com
+    problem_set_title: Special Triangles
+    problem_set_desc: 
+    problem_set_link: https://www.scribd.com/embeds/335568116/content?start_page=1&view_mode=scroll&access_key=key-9aCooZp0isWTAvjcd7qs&show_recommendations=false
+  - title: Trig Ratios Application Activity
+    short_title: Trig Ratios Activity
+    ln_title: Trig Ratios Application Activity
+    ln_desc:
+    ln_link: https://www.scribd.com/embeds/335559451/content?start_page=1&view_mode=scroll&access_key=key-RF7uOnHqQiVmbROEGuLC&show_recommendations=false
+    ln_citation: 2
+    ln_citation_name: Sam J Shah
+    ln_citation_link: www.samjshah.com
+    problem_set_title: Trig Ratios Application
+    problem_set_desc: Complete a selection of the following problems from Haese & Harris MYP Math 5 (Standard). These will give you some practice with applying your understanding of Trig Ratios to some various word problems and 3D problems.
+    problem_set: 
+        - problems: Page 253 13B - Complete 3-5 problems of varying difficulty
+        - problems: Page 256 13C - Complete 3-5 problems of varying difficulty
+        - problems: Page 259 13D - Complete 3-4 problems of varying difficulty
+    problem_set_link: 
+extensions:
+  - title: Extension 1
+    description: Coming soon!
+  - title: Extension 3
+    description: Coming soon!
+  - title: Extension 3
+    description: Coming soon!
+resources:
+  - title: Geogebra Trig Ratios
+    description: This Geogebra worksheet will help you to investigate trig ratios. You can see how changing one of the side lengths and angles will impact each of the ratios.
+---
+<div class="title-group">
+    <h1 class="special">
+        <span>
+            {{page.course_title}}
+        </span>
+    </h1>
+    {% if page.course_desc %}
+    <p class="lead">
+        {{page.course_desc}}
+    </p>
+    {% endif %}
+    <div class="btn-group btn-group-justified" role="group" style="margin-top:50px;">
+      {% for x in page.all_units %}
+      <div class="btn-group" role="group">
+        {% if x.title == "Unit 3" %}
+        <a type="button" class="btn btn-default active">{{x.title}}</a>
+        {% elsif x.disabled %}
+        <a type="button" class="btn btn-default" disabled>{{x.title}}</a>
+        {% else %} 
+        <a href="../{{x.permalink}}" type="button" class="btn btn-default">{{x.title}}</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+</div>
+
+<div id="ribbon"></div>
+    <div id="page">
+        <!-- Zozo Tabs Start-->
+        <div id="tabbed-nav">
+
+            <!-- Tab Navigation Menu -->
+            <ul>
+                <li><a>Lessons<span></span></a></li>
+                <li><a>Problem Sets<span></span></a></li>
+                <li><a>Extension<span></span></a></li>
+                <li><a>Additional Resources</a></li> 
+            </ul>
+
+            <!-- Content container -->
+            <div>
+
+                <div class="z-content-pad">
+                    <div class="nested-tabs">
+
+                        <!-- Nested Tab Navigation Menu -->
+                        <ul>
+                            {% for x in page.lessons %}
+                            <li><a>{{x.short_title}}</a></li>
+                            {% endfor %}
+                        </ul>
+
+                        <!-- Nested Content container -->
+
+                        <div>
+                            {% for x in page.lessons %}
+                            <div>
+                                <div class='page-header'>
+                                    {% if x.ln_citation != 0 %}
+                                    <div class='pull-right'>
+                                        {% if x.ln_citation == 1 %}
+                                        Originally created by:
+                                        {% else %}
+                                        Originally adapted from:
+                                        {% endif %} 
+                                        <a href="{{x.ln_citation_link}}">{{x.ln_citation_name}}</a>
+                                    </div>
+                                    {% endif %}
+                                    <h4>{{x.ln_title}}</h4>
+                                </div>
+                                <p>{{x.ln_desc}}</p>
+                                {% if x.ln_link %}
+                                <iframe class="scribd_iframe_embed" src="{{x.ln_link}}" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" id="doc_3184" width="100%" height="600" frameborder="0"></iframe>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="z-content-pad">
+                    <div class="nested-tabs">
+
+                        <!-- Nested Tab Navigation Menu -->
+                        <ul>
+                            {% for x in page.lessons %}
+                            <li><a>{{x.short_title}}</a></li>
+                            {% endfor %}
+                        </ul>
+
+                        <!-- Nested Content container -->
+                        <div>
+                            {% for x in page.lessons %}
+                            <div>
+                                <h4>{{x.problem_set_title}}</h4>
+                                <div>
+                                    <p>{{x.problem_set_desc}}</p>
+                                </div>
+                                {% if x.problem_set %}
+                                    <ul>
+                                    {% for x in x.problem_set %}
+                                        <li>{{x.problems}}</li>
+                                    {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                {% if x.problem_set_link %}
+                                    <iframe class="scribd_iframe_embed" src="{{x.problem_set_link}}" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" id="doc_3184" width="100%" height="600" frameborder="0"></iframe>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="z-content-pad">
+                    <div class="nested-tabs">
+
+                        <!-- Nested Tab Navigation Menu -->
+                        <ul>
+                            {% for x in page.extensions %}
+                            <li><a>{{x.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+
+                        <!-- Nested Content container -->
+                        <div>
+                            {% for x in page.extensions %}
+                            <div>
+                                <p>{{x.description}}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="z-content-pad">
+                    <div class="nested-tabs">
+
+                        <!-- Nested Tab Navigation Menu -->
+                        <ul>
+                            {% for x in page.resources %}
+                            <li><a>{{x.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+                        <!-- Nested Content container -->
+                        <div>
+                            {% for x in page.resources %}
+                            <div>
+                                <h4>{{x.title}}</h4>
+                                <div>
+                                    <p>{{x.description}}</p>
+                                </div>
+                                {% if x.links %}
+                                    <ul>
+                                    {% for x in x.links %}
+                                        <li>{{x.link}}</li>
+                                    {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                {% if x.title contains 'Geogebra' %}
+                                    <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/xJGKMQWj/width/1431/height/682/border/888888/sri/true/sdz/true" width="1431px" height="682px" style="border:0px;"> </iframe>
+                                {% else if x.resource_link %}
+                                    <iframe class="scribd_iframe_embed" src="{{x.resource_link}}" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" id="doc_3184" width="100%" height="600" frameborder="0"></iframe>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Zozo Tabs End-->
+
+    </div>
+
+    <style>
+        .z-tabs > .z-container > .z-content.z-content-pad > .z-content-inner
+        {
+            padding-top: 10px;
+        }
+    </style>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            /* jQuery activation and setting options for parent tabs with id selector*/
+            $("#tabbed-nav").zozoTabs({
+                position: "top-compact",
+                rounded: false,
+                multiline: true,
+                theme: "white",
+                size: "medium",
+                responsive: true,
+                animation: {
+                    effects: "slideH",
+                    easing: "easeInOutCirc",
+                    type: "jquery"
+                },
+                defaultTab: "tab1"
+            });
+
+            /* jQuery activation and setting options for nested tabs with class selector*/
+            $(".nested-tabs").zozoTabs({
+                position: "top-left",
+                theme: "red",
+                style: "underlined",
+                rounded: false,
+                shadows: false,
+                defaultTab: "tab1",
+                animation: {
+                    easing: "easeInOutCirc",
+                    effects: "slideV"
+                },
+                size: "medium"
+            });
+        });
+    </script>

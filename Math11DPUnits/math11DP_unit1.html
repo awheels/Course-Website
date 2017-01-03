@@ -1,0 +1,286 @@
+---
+layout: default
+permalink: /dpmath11/unit1/
+course_title: DP math 11
+course_desc: This is the course description.
+all_units:
+  - title: Unit 1
+    permalink: unit1/
+    disabled: false
+  - title: Unit 2
+    permalink: unit2/
+    disabled: false
+  - title: Unit 3
+    permalink: unit3/
+    disabled: true
+  - title: Unit 4
+    permalink: unit4/
+    disabled: true
+  - title: Unit 5
+    permalink: unit5/
+    disabled: true
+lessons:
+  - title: DP Math 11
+    lesson_video_title: test
+    lesson_video_desc: test
+    lesson_video_link: test
+    lesson_notes_title: DP Math 11
+    lesson_notes_desc: DP Math 11
+    lesson_notes_link: test
+    problem_set_title: test
+    problem_set_desc: test
+    problem_set_link: test
+    activities_title: test
+    activities_desc: test
+    activities_link: test
+    extension_title: test
+    extension_desc: test
+    extension_link: test
+  - title: DP Math 11
+    lesson_video_title: test
+    lesson_video_desc: test
+    lesson_video_link: test
+    lesson_notes_title: DP Math 11
+    lesson_notes_desc: DP Math 11
+    lesson_notes_link: test
+    problem_set_title: test
+    problem_set_desc: test
+    problem_set_link: test
+    activities_title: test
+    activities_desc: test
+    activities_link: test
+    extension_title: test
+    extension_desc: test
+    extension_link: test
+  - title: DP Math 11
+    lesson_video_title: test
+    lesson_video_desc: test
+    lesson_video_link: test
+    lesson_notes_title: DP Math 11
+    lesson_notes_desc: DP Math 11
+    lesson_notes_link: test
+    problem_set_title: test
+    problem_set_desc: test
+    problem_set_link: test
+    activities_title: test
+    activities_desc: test
+    activities_link: test
+    extension_title: test
+    extension_desc: test
+    extension_link: test
+  - title: DP Math 11
+    lesson_video_title: test
+    lesson_video_desc: test
+    lesson_video_link: test
+    lesson_notes_title: DP Math 11
+    lesson_notes_desc: DP Math 11
+    lesson_notes_link: test
+    problem_set_title: test
+    problem_set_desc: test
+    problem_set_link: test
+    activities_title: test
+    activities_desc: test
+    activities_link: test
+    extension_title: test
+    extension_desc: test
+    extension_link: test
+---
+<div class="title-group">
+    <h1 class="special">
+        <span>
+            {{page.course_title}}
+        </span>
+    </h1>
+    {% if page.course_desc %}
+    <p class="lead">
+        {{page.course_desc}}
+    </p>
+    {% endif %}
+    <div class="btn-group btn-group-justified" role="group" style="margin-top:50px;">
+      {% for x in page.all_units %}
+      <div class="btn-group" role="group">
+        {% if x.title == "Unit 1" %}
+        <a type="button" class="btn btn-default active">{{x.title}}</a>
+        {% elsif x.disabled %}
+        <a type="button" class="btn btn-default" disabled>{{x.title}}</a>
+        {% else %} 
+        <a href="../{{x.permalink}}" type="button" class="btn btn-default">{{x.title}}</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+</div>
+
+<div id="ribbon"></div>
+    <div id="page">
+        <!-- Zozo Tabs Start-->
+        <div id="tabbed-nav">
+
+            <!-- Tab Navigation Menu -->
+            <ul>
+                <li><a>Lesson Videos<span></span></a></li>
+                <li><a>Lesson Notes<span></span></a></li>
+                <li><a>Problem Sets<span></span></a></li>
+                <li><a>Activities<span></span></a></li>
+                <li><a>Extension<span></span></a></li>
+            </ul>
+
+            <!-- Content container -->
+            <div>
+
+                <div class="z-content-pad">
+                    <div class="nested-tabs">
+
+                        <ul>
+                            {% for x in page.lessons %}
+                            <li><a>{{x.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+
+                        <div>
+                            {% for x in page.lessons %}
+                            <div>
+                                <h4>{{x.lesson_video_title}}</h4>
+                                <p>{{x.lesson_video_desc}}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="z-content-pad">
+                    <div class="nested-tabs">
+
+                        <!-- Nested Tab Navigation Menu -->
+                        <ul>
+                            {% for x in page.lessons %}
+                            <li><a>{{x.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+
+                        <!-- Nested Content container -->
+                        <div>
+                            {% for x in page.lessons %}
+                            <div>
+                                <h4>{{x.lesson_notes_title}}</h4>
+                                <p>{{x.lesson_notes_desc}}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="z-content-pad">
+                    <div class="nested-tabs">
+
+                        <!-- Nested Tab Navigation Menu -->
+                        <ul>
+                            {% for x in page.lessons %}
+                            <li><a>{{x.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+
+                        <!-- Nested Content container -->
+                        <div>
+                            {% for x in page.lessons %}
+                            <div>
+                                <h4>{{x.problem_set_title}}</h4>
+                                <p>{{x.problem_set_desc}}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="z-content-pad">
+                    <div class="nested-tabs">
+
+                        <!-- Nested Tab Navigation Menu -->
+                        <ul>
+                            {% for x in page.lessons %}
+                            <li><a>{{x.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+
+                        <!-- Nested Content container -->
+                        <div>
+                            {% for x in page.lessons %}
+                            <div>
+                                <h4>{{x.activities_title}}</h4>
+                                <p>{{x.activities_desc}}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="z-content-pad">
+                    <div class="nested-tabs">
+
+                        <!-- Nested Tab Navigation Menu -->
+                        <ul>
+                            {% for x in page.lessons %}
+                            <li><a>{{x.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+
+                        <!-- Nested Content container -->
+                        <div>
+                            {% for x in page.lessons %}
+                            <div>
+                                <h4>{{x.extension_title}}</h4>
+                                <p>{{x.extension_desc}}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Zozo Tabs End-->
+
+    </div>
+
+    <style>
+        .z-tabs > .z-container > .z-content.z-content-pad > .z-content-inner
+        {
+            padding-top: 10px;
+        }
+    </style>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            /* jQuery activation and setting options for parent tabs with id selector*/
+            $("#tabbed-nav").zozoTabs({
+                position: "top-compact",
+                rounded: false,
+                multiline: true,
+                theme: "white",
+                size: "medium",
+                responsive: true,
+                animation: {
+                    effects: "slideH",
+                    easing: "easeInOutCirc",
+                    type: "jquery"
+                },
+                defaultTab: "tab2"
+            });
+
+            /* jQuery activation and setting options for nested tabs with class selector*/
+            $(".nested-tabs").zozoTabs({
+                position: "top-left",
+                theme: "red",
+                style: "underlined",
+                rounded: false,
+                shadows: false,
+                defaultTab: "tab1",
+                animation: {
+                    easing: "easeInOutCirc",
+                    effects: "slideV"
+                },
+                size: "medium"
+            });
+        });
+    </script>
