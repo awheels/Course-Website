@@ -21,8 +21,6 @@ all_units:
     disabled: true
 lessons:
   - title: Discovering (or Rediscovering) Trig Ratios
-    short_title: Disc Trig Ratios
-    ln_title: Discovering (or Rediscovering) Trig Ratios
     ln_desc: 
     ln_link: https://www.scribd.com/embeds/335560116/content?start_page=1&view_mode=scroll&access_key=key-Z9TqQolB2W7VrDFXmQHk&show_recommendations=false
     ln_citation: 2
@@ -32,8 +30,6 @@ lessons:
     problem_set_desc: I know it will be tempting to use your calculator here. But please do not!
     problem_set_link: https://www.scribd.com/embeds/335570604/content?start_page=1&view_mode=scroll&access_key=key-9CB1emj95FTE8KOeJCtL&show_recommendations=false
   - title: Naming Trig Ratios
-    short_title: Naming Trig Ratios
-    ln_title: Naming Trig Ratios
     ln_desc: 
     ln_link: https://www.scribd.com/embeds/335560115/content?start_page=1&view_mode=scroll&access_key=key-R6FWtbiInBEQBVbrX121&show_recommendations=false
     ln_citation: 2
@@ -47,8 +43,7 @@ lessons:
         - problems: Page 251 13A.3 - Complete 3-5 problems of varying difficulty
     problem_set_link: 
   - title: Special Triangles
-    short_title: Spec Triangles
-    ln_title: Special Triangles
+    title: Special Triangles
     ln_desc:
     ln_link: https://www.scribd.com/embeds/335560118/content?start_page=1&view_mode=scroll&access_key=key-TBz02TjC9Q0tiqeQwDkz&show_recommendations=false
     ln_citation: 1
@@ -58,8 +53,6 @@ lessons:
     problem_set_desc: 
     problem_set_link: https://www.scribd.com/embeds/335568116/content?start_page=1&view_mode=scroll&access_key=key-9aCooZp0isWTAvjcd7qs&show_recommendations=false
   - title: Trig Ratios Application Activity
-    short_title: Trig Ratios Activity
-    ln_title: Trig Ratios Application Activity
     ln_desc:
     ln_link: https://www.scribd.com/embeds/335559451/content?start_page=1&view_mode=scroll&access_key=key-RF7uOnHqQiVmbROEGuLC&show_recommendations=false
     ln_citation: 2
@@ -73,8 +66,6 @@ lessons:
         - problems: Page 259 13D - Complete 3-4 problems of varying difficulty
     problem_set_link: 
   - title: Coding Trig Ratios Problem Generator
-    short_title: Code Prob Generator
-    ln_title: Coding Trig Ratios Problem Generator
     ln_desc:
     ln_link: https://www.scribd.com/embeds/336358512/content?start_page=1&view_mode=scroll&access_key=key-oBSBq5143WMcvIklHoYB&show_recommendations=false
     ln_citation: 0
@@ -143,7 +134,7 @@ resources:
                         <!-- Nested Tab Navigation Menu -->
                         <ul>
                             {% for x in page.lessons %}
-                            <li><a>{{x.short_title}}</a></li>
+                            <li><a>{{x.title}}</a></li>
                             {% endfor %}
                         </ul>
 
@@ -163,7 +154,7 @@ resources:
                                         <a href="{{x.ln_citation_link}}">{{x.ln_citation_name}}</a>
                                     </div>
                                     {% endif %}
-                                    <h4>{{x.ln_title}}</h4>
+                                    <h4>{{x.title}}</h4>
                                 </div>
                                 <p>{{x.ln_desc}}</p>
                                 {% if x.ln_link %}
@@ -181,7 +172,7 @@ resources:
                         <!-- Nested Tab Navigation Menu -->
                         <ul>
                             {% for x in page.lessons %}
-                            <li><a>{{x.short_title}}</a></li>
+                            <li><a>{{x.title}}</a></li>
                             {% endfor %}
                         </ul>
 
@@ -282,11 +273,12 @@ resources:
         jQuery(document).ready(function ($) {
             /* jQuery activation and setting options for parent tabs with id selector*/
             $("#tabbed-nav").zozoTabs({
-                position: "top-compact",
                 rounded: false,
                 multiline: true,
-                theme: "white",
+                style: "clean",
+                theme: "flat-alizarin",
                 size: "medium",
+                spaced: true,
                 responsive: true,
                 animation: {
                     effects: "slideH",
@@ -299,7 +291,8 @@ resources:
             /* jQuery activation and setting options for nested tabs with class selector*/
             $(".nested-tabs").zozoTabs({
                 position: "top-left",
-                theme: "red",
+                orientation: "vertical",
+                theme: "flat-alizarin",
                 style: "underlined",
                 rounded: false,
                 shadows: false,
@@ -312,3 +305,4 @@ resources:
             });
         });
     </script>
+

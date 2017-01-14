@@ -15,7 +15,7 @@ permalink: /about/
     <!-- Content container -->
     <div>
         <div>
-            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer</p>
+            <p>Coming soon!</p>
         </div>
         <div>
             <h4>Late Policy</h4>
@@ -47,8 +47,8 @@ permalink: /about/
             </table>
         </div>
         <div>
-            <h4>Test Retake Policy</h4>
-            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer</p>
+            <h4>Retake Policy</h4>
+            <p>Coming soon!</p>
         </div>
     </div>
 </div>
@@ -57,17 +57,19 @@ permalink: /about/
     jQuery(document).ready(function ($) {
         /* jQuery activation and setting options for the first tabs*/
         $("#tabbed-nav").zozoTabs({
-            position: "top-compact",
             rounded: false,
             multiline: true,
-            theme: "white",
+            style: "clean",
+            theme: "flat-alizarin",
             size: "medium",
+            spaced: true,
             responsive: true,
             animation: {
                 effects: "slideH",
                 easing: "easeInOutCirc",
                 type: "jquery"
             },
+            defaultTab: "tab1"
         });
     });
 </script>

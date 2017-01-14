@@ -284,11 +284,12 @@ resources:
         jQuery(document).ready(function ($) {
             /* jQuery activation and setting options for parent tabs with id selector*/
             $("#tabbed-nav").zozoTabs({
-                position: "top-compact",
                 rounded: false,
                 multiline: true,
-                theme: "white",
+                style: "clean",
+                theme: "flat-alizarin",
                 size: "medium",
+                spaced: true,
                 responsive: true,
                 animation: {
                     effects: "slideH",
@@ -301,7 +302,8 @@ resources:
             /* jQuery activation and setting options for nested tabs with class selector*/
             $(".nested-tabs").zozoTabs({
                 position: "top-left",
-                theme: "red",
+                orientation: "vertical",
+                theme: "flat-alizarin",
                 style: "underlined",
                 rounded: false,
                 shadows: false,
