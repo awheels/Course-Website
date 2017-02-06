@@ -21,8 +21,6 @@ all_units:
     disabled: true
 lessons:
   - title: Similar Triangles and Trig Ratios Part 1
-    short_title: Trig Ratios 1
-    ln_title: Similar Triangles and Trig Ratios Part 1
     ln_desc: 
     ln_link: https://www.scribd.com/embeds/335560799/content?start_page=1&view_mode=scroll&access_key=key-8yf1Dy8agVNDobw5yhRf&show_recommendations=false
     ln_citation: 1
@@ -32,8 +30,6 @@ lessons:
     problem_set_desc: I know it will be tempting to use your calculator here. But please do not!
     problem_set_link: https://www.scribd.com/embeds/335559450/content?start_page=1&view_mode=scroll&access_key=key-QEIMYYeytReLWq87Eisw&show_recommendations=false
   - title: Similar Triangles and Trig Ratios Part 2
-    short_title: Trig Ratios 2
-    ln_title: Similar Triangles and Trig Ratios Part 2
     ln_desc: 
     ln_link: https://www.scribd.com/embeds/335559454/content?start_page=1&view_mode=scroll&access_key=key-Filx40IdjofTs0UCsncc&show_recommendations=false
     ln_citation: 1
@@ -43,8 +39,6 @@ lessons:
     problem_set_desc: I know it will be tempting to use your calculator here. But please do not!
     problem_set_link: https://www.scribd.com/embeds/335559455/content?start_page=1&view_mode=scroll&access_key=key-13vs9VeRawpUwz4U1gDG&show_recommendations=false
   - title: Similar Triangles and Trig Ratios Part 3
-    short_title: Trig Ratios 3
-    ln_title: Similar Triangles and Trig Ratios Part 3
     ln_desc:
     ln_link: https://www.scribd.com/embeds/335559452/content?start_page=1&view_mode=scroll&access_key=key-ulMtLXBtMpoBiWbqh0Wl&show_recommendations=false
     ln_citation: 1
@@ -58,8 +52,6 @@ lessons:
         - problems: Page 274 12C.3 - Complete 3-5 problems of varying difficulty
     problem_set_link: 
   - title: Trig Ratios Application Activity
-    short_title: Trig Ratios Activity
-    ln_title: Trig Ratios Application Activity
     ln_desc:
     ln_link: https://www.scribd.com/embeds/335559451/content?start_page=1&view_mode=scroll&access_key=key-RF7uOnHqQiVmbROEGuLC&show_recommendations=fals
     ln_citation: 0
@@ -72,8 +64,6 @@ lessons:
         - problems: Page 282 12F - Complete 3-5 problems of varying difficulty
     problem_set_link: 
   - title: Similar Triangles and Trig Ratios Part 4
-    short_title: Trig Ratios 4
-    ln_title: Similar Triangles and Trig Ratios Part 4
     ln_desc:
     ln_link: https://www.scribd.com/embeds/335559456/content?start_page=1&view_mode=scroll&access_key=key-POmK07IaX1E8vuSwNde7&show_recommendations=false
     ln_citation: 1
@@ -82,6 +72,29 @@ lessons:
     problem_set_title: Similar Triangles and Trig Ratios Part 4
     problem_set_desc: 
     problem_set_link: https://www.scribd.com/embeds/335568116/content?start_page=1&view_mode=scroll&access_key=key-9aCooZp0isWTAvjcd7qs&show_recommendations=false
+  - title: Discovering Cosine Law
+    ln_desc:
+    ln_link: https://www.scribd.com/embeds/338533079/content?start_page=1&view_mode=scroll&access_key=key-ROJjXI2rYlnOUIvAre8y&show_recommendations=false
+    ln_citation: 2
+    ln_citation_name: NZMath
+    ln_citation_link: https://nzmaths.co.nz/resource/cosine-rule
+    problem_set_title: Discovering Cosine Law
+    problem_set_desc: Complete the following problems from Haese & Harris MYP Math 5 (Standard).
+    problem_set: 
+        - problems: Page 512 25E - Complete #1-4
+    problem_set_link: 
+  - title: Discovering Sine Law
+    ln_desc:
+    ln_link: https://www.scribd.com/embeds/338533078/content?start_page=1&view_mode=scroll&access_key=key-uVDP16dQ5VFVmcGIBgOD&show_recommendations=false
+    ln_citation: 2
+    ln_citation_name: NZMath
+    ln_citation_link: https://nzmaths.co.nz/resource/im-so-sorry-i-ate-chocolate
+    problem_set_title: Discovering Cosine Law
+    problem_set_desc: Complete the following problems from Haese & Harris MYP Math 5 (Standard).
+    problem_set: 
+        - problems: Page 509 25D.1 - Complete #1-2
+        - problems: Page 511 25D.2 - Complete #1-2
+    problem_set_link: 
 extensions:
   - title: Extension 1
     description: Coming soon!
@@ -95,6 +108,13 @@ resources:
     resource_link: https://www.scribd.com/embeds/256464228/content?start_page=1&view_mode=scroll&access_key=key-8xTMFV0wITiGkPLcm8dp&show_recommendations=false
   - title: Geogebra Trig Ratios
     description: This Geogebra worksheet will help you to investigate trig ratios. You can see how changing one of the side lengths and angles will impact each of the ratios.
+    resource_link: https://www.geogebra.org/material/iframe/id/xJGKMQWj/width/1431/height/682/border/888888/sri/true/sdz/true
+  - title: Geogebra Discovering Cosine Law
+    description: This Geogebra worksheet will help you to investigate the cosine law.
+    resource_link: https://www.geogebra.org/material/iframe/id/yZ89Em4Q/width/1431/height/686/border/888888/sri/true/sdz/true
+  - title: Geogebra Discovering Sine Law
+    description: This Geogebra worksheet will help you to investigate the sine law.
+    resource_link: https://www.geogebra.org/material/iframe/id/XQe5UUFh/width/1431/height/672/border/888888/sri/true/sdz/true
 ---
 
 <div class="title-group">
@@ -145,7 +165,7 @@ resources:
                         <!-- Nested Tab Navigation Menu -->
                         <ul>
                             {% for x in page.lessons %}
-                            <li><a>{{x.short_title}}</a></li>
+                            <li><a>{{x.title}}</a></li>
                             {% endfor %}
                         </ul>
 
@@ -165,7 +185,7 @@ resources:
                                         <a href="{{x.ln_citation_link}}">{{x.ln_citation_name}}</a>
                                     </div>
                                     {% endif %}
-                                    <h4>{{x.ln_title}}</h4>
+                                    <h4>{{x.title}}</h4>
                                 </div>
                                 <p>{{x.ln_desc}}</p>
                                 {% if x.ln_link %}
@@ -183,29 +203,33 @@ resources:
                         <!-- Nested Tab Navigation Menu -->
                         <ul>
                             {% for x in page.lessons %}
-                            <li><a>{{x.short_title}}</a></li>
+                                {% if x.problem_set_title %}
+                                <li><a>{{x.title}}</a></li>
+                                {% endif %}
                             {% endfor %}
                         </ul>
 
                         <!-- Nested Content container -->
                         <div>
                             {% for x in page.lessons %}
-                            <div>
-                                <h4>{{x.problem_set_title}}</h4>
+                                {% if x.problem_set_title %}
                                 <div>
-                                    <p>{{x.problem_set_desc}}</p>
+                                    <h4>{{x.problem_set_title}}</h4>
+                                    <div>
+                                        <p>{{x.problem_set_desc}}</p>
+                                    </div>
+                                    {% if x.problem_set %}
+                                        <ul>
+                                        {% for x in x.problem_set %}
+                                            <li>{{x.problems}}</li>
+                                        {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                    {% if x.problem_set_link %}
+                                        <iframe class="scribd_iframe_embed" src="{{x.problem_set_link}}" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" id="doc_3184" width="100%" height="600" frameborder="0"></iframe>
+                                    {% endif %}
                                 </div>
-                                {% if x.problem_set %}
-                                    <ul>
-                                    {% for x in x.problem_set %}
-                                        <li>{{x.problems}}</li>
-                                    {% endfor %}
-                                    </ul>
                                 {% endif %}
-                                {% if x.problem_set_link %}
-                                    <iframe class="scribd_iframe_embed" src="{{x.problem_set_link}}" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" id="doc_3184" width="100%" height="600" frameborder="0"></iframe>
-                                {% endif %}
-                            </div>
                             {% endfor %}
                         </div>
                     </div>
@@ -257,7 +281,7 @@ resources:
                                     </ul>
                                 {% endif %}
                                 {% if x.title contains 'Geogebra' %}
-                                    <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/xJGKMQWj/width/1431/height/682/border/888888/sri/true/sdz/true" width="1431px" height="682px"> </iframe>
+                                    <iframe scrolling="no" src="{{x.resource_link}}" width="1100" height="682px"> </iframe>
                                 {% else if x.resource_link %}
                                     <iframe class="scribd_iframe_embed" src="{{x.resource_link}}" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" id="doc_3184" width="100%" height="600" frameborder="0"></iframe>
                                 {% endif %}
